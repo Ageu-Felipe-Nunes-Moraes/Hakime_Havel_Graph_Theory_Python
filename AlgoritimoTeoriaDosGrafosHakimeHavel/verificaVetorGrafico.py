@@ -1,24 +1,29 @@
 
 #Hakime Havel
 
+def reorganizarVetor(vetor): # Organiza a lista em ordem decrescente
+    vetor.sort(reverse=True)
+
+def mostraVetor(vetor):
+    print(vetor)
 
 # Função que verifica se é um vetor gráfico por meio dos princípios de Hakime Havel
 def vetorGraficoAtualizado(vetor):
     contador = 0
     maiorValor = 0 # Vai receber o maior valor do vetor
-    vetor.sort(reverse=True)
+    reorganizarVetor(vetor)
 
     # Aplicando todas as iterações necessárias para chegar a uma conclusão satisfatória
     if len(vetor) > vetor[0]: # Verificando se há algum vértice de grau maior que o tamanho do vetor
-        print(vetor)
+        mostraVetor(vetor)
         for i in range(len(vetor)):
             maiorValor = vetor[0]
             del(vetor[0]) # Deleta o primeiro item do vetor
             for j in range(maiorValor):
                 vetor[j] = vetor[j] - 1 # Subtrai 1 de cada posição
-            print(vetor)
-            vetor.sort(reverse=True)
-            print(vetor)
+            mostraVetor(vetor)
+            reorganizarVetor(vetor)
+            mostraVetor(vetor)
             if vetor[0] == 0: # Verifica se a primeira posição é igual a "0"
                 for k in range(len(vetor)):
                     if vetor[k] == 0: # Verfica se todas as outras posições também são iguais a "0"
@@ -34,7 +39,7 @@ def vetorGraficoAtualizado(vetor):
         print("Tipo de lista inválida")
 
 vetorGraficoAtualizado([3,2,2,2,2]) # Lista de entrada
-
+    
 
 #não gráfico
 '''[6, 5, 4, 4, 4, 4, 4, 2]
