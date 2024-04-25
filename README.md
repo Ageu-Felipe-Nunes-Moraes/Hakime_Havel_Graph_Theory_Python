@@ -1,13 +1,7 @@
 
 # Hakime Havel
 
-O código **Hakime Havel** é uma implementação em Python de um algoritmo para verificar se um determinado vetor é um vetor gráfico, seguindo os princípios do conceito de Hakime Havel.
-
-## Funcionalidades
-
-- **Reorganização do Vetor:** A função `reorganizarVetor(vetor)` organiza a lista em ordem decrescente.
-- **Mostrar Vetor:** A função `mostraVetor(vetor)` exibe o vetor na saída padrão.
-- **Verificação de Vetor Gráfico:** A função `vetorGraficoAtualizado(vetor)` verifica se um vetor é um vetor gráfico de acordo com os princípios de Hakime Havel.
+O código **Hakime Havel** é uma implementação em Python de um algoritmo para verificar se um determinado vetor pode ser representado graficamente, seguindo os princípios do conceito de Hakime Havel.
 
 ## Detalhes de Implementação
 
@@ -18,7 +12,7 @@ O código **Hakime Havel** é uma implementação em Python de um algoritmo para
 ## Como Usar
 
 1. Execute o código Python.
-2. Chame a função `vetorGraficoAtualizado(vetor)` passando como argumento um vetor para verificar se é um vetor gráfico.
+2. Chame a função `hakime.graphic_vector()` passando como argumento um vetor para verificar se é um vetor gráfico.
 
 ## Como Contribuir
 
